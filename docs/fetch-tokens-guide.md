@@ -83,3 +83,16 @@ For each valid token, create a structured object with:
 - Implement CRUD operations
 - Support for querying and indexing
 - Suitable for production applications
+
+## 6. Scheduling Regular Updates
+
+### Using node-cron
+- Set up a schedule (e.g., every 5 minutes)
+- Implement the job function to fetch and process tokens
+- Handle job completion and error cases
+
+### Preventing Overlapping Jobs
+- Use a flag to track if a job is running
+- Skip new job execution if previous job is still running
+- Reset flag when job completes or fails
+- Log job status for monitoring
