@@ -21,3 +21,16 @@ Create a `.env` file with the following variables:
 - axios: For making HTTP requests
 - mongoose: For database operations (optional)
 - node-cron: For scheduling jobs (optional)
+
+## 2. Fetching Token Pairs from the Subgraph
+
+### GraphQL Query Structure
+Create a GraphQL query that fetches:
+- Pair addresses and creation timestamps
+- Token addresses, symbols, and names
+- Reserves and liquidity information
+
+### Key Query Parameters
+- Limit results to a manageable number (e.g., 50 pairs)
+- Order by creation time (newest first)
+- Filter for pairs with non-zero reserves
