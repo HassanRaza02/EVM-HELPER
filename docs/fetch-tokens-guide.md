@@ -109,3 +109,36 @@ For each valid token, create a structured object with:
 - Query token.derivedETH values if available
 - Fetch ETH price in USD
 - Calculate USD price by multiplying derivedETH by ETH price
+
+## 8. Best Practices for Production
+
+### Error Handling
+- Implement robust error handling for network issues
+- Add retry logic for transient failures
+- Log errors with appropriate detail
+
+### Rate Limiting
+- Respect API rate limits for The Graph and RPC providers
+- Implement exponential backoff for retries
+
+### Monitoring
+- Add health checks to verify the system is working
+- Set up alerts for critical failures
+- Log token counts and validation statistics
+
+### Caching
+- Cache token data to reduce RPC calls
+- Implement TTL (time-to-live) for cached data
+- Use memory cache for frequent lookups
+
+## 9. Integration with DeFi Applications
+
+### Using Fetched Tokens in Your Application
+- Create endpoints or functions to access token data
+- Implement filtering and sorting for UI components
+- Keep token lists updated with latest information
+
+### Token List Format
+- Follow standard token list format (similar to Uniswap token lists)
+- Include essential metadata (address, symbol, name, decimals, logo)
+- Version your token lists for tracking changes
