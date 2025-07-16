@@ -13,3 +13,11 @@ Create a `.env` file with the following variables:
 - GRAPHQL_API_KEY: Your Graph API key
 - ETH_RPC_URL: Your Sepolia RPC URL
 - DATABASE_URL: MongoDB connection string (if using database storage)
+
+### Required Dependencies
+- graphql-request: For querying The Graph API
+- dotenv: For loading environment variables
+- ethers: For interacting with Ethereum contracts
+- axios: For making HTTP requests
+- mongoose: For database operations (optional)
+- node-cron: For scheduling jobs (optional)
