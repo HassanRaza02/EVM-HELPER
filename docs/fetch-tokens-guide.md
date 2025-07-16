@@ -40,3 +40,12 @@ Create a GraphQL query that fetches:
 2. Create the query structure to fetch required data
 3. Handle authentication with The Graph API
 4. Process and log the response data
+
+## 3. Validating Token Contracts
+
+### Basic Security Checks
+For each token, perform these validations:
+1. Contract exists and is accessible
+2. Has valid name and symbol properties
+3. Has non-zero total supply
+4. Implements standard ERC20 functions
