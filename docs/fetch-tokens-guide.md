@@ -34,3 +34,9 @@ Create a GraphQL query that fetches:
 - Limit results to a manageable number (e.g., 50 pairs)
 - Order by creation time (newest first)
 - Filter for pairs with non-zero reserves
+
+### Implementation Steps
+1. Set up the GraphQL endpoint with your API key
+2. Create the query structure to fetch required data
+3. Handle authentication with The Graph API
+4. Process and log the response data
