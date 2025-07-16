@@ -49,3 +49,19 @@ For each token, perform these validations:
 2. Has valid name and symbol properties
 3. Has non-zero total supply
 4. Implements standard ERC20 functions
+
+## 4. Processing Token Data
+
+### Token Data Structure
+For each valid token, create a structured object with:
+- Basic information (address, symbol, name)
+- Liquidity and reserve data
+- Network identifier (e.g., "sepolia")
+- Validation timestamp and status
+
+### Processing Steps
+1. Extract token data from pair information
+2. Format and normalize data (e.g., convert wei to ether)
+3. Add metadata like network identifier
+4. Validate tokens using security checks
+5. Filter out invalid tokens (with exceptions for essential tokens like WETH)
