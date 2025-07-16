@@ -96,3 +96,16 @@ For each valid token, create a structured object with:
 - Skip new job execution if previous job is still running
 - Reset flag when job completes or fails
 - Log job status for monitoring
+
+
+## 7. Handling Token Prices
+
+### Calculating Prices from Reserves
+- For tokens paired with ETH, calculate price from reserves
+- Account for token decimals in calculations
+- Format prices in ETH and USD terms
+
+### Using derivedETH from Subgraph
+- Query token.derivedETH values if available
+- Fetch ETH price in USD
+- Calculate USD price by multiplying derivedETH by ETH price
