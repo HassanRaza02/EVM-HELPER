@@ -65,3 +65,21 @@ For each valid token, create a structured object with:
 3. Add metadata like network identifier
 4. Validate tokens using security checks
 5. Filter out invalid tokens (with exceptions for essential tokens like WETH)
+
+## 5. Storage Options
+
+### In-Memory Storage
+- Store tokens in arrays or maps
+- Suitable for simple scripts or one-time runs
+- No persistence between script executions
+
+### File-Based Storage
+- Save tokens to JSON files
+- Simple persistence without database setup
+- Easy to version control and share
+
+### Database Storage (MongoDB)
+- Define schema and model for tokens
+- Implement CRUD operations
+- Support for querying and indexing
+- Suitable for production applications
